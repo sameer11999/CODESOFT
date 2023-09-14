@@ -1,0 +1,108 @@
+#include<iostream>
+using namespace std; 
+
+int a,b,result;
+
+
+void Add()
+{
+    cout<<"Enter a : "<<endl;
+    cin>>a;
+    cout<<"Enter b : "<<endl;
+    cin>>b;
+
+    result = a+b;
+
+    cout<<"The ADDITION of a+b is "<<result;
+}
+
+void Sub()
+{
+    cout<<"Enter a : "<<endl;
+    cin>>a;
+    cout<<"Enter b : "<<endl;
+    cin>>b;
+
+    result = a-b;
+    
+    cout<<"The SUBSTRACTION of a-b is "<<result;
+}
+
+void Mul()
+{
+    cout<<"Enter a : "<<endl;
+    cin>>a;
+    cout<<"Enter b : "<<endl;
+    cin>>b;
+
+    result = a*b;
+    
+    cout<<"The MULTIPLICATION of a*b is "<<result;
+}
+
+void Div()
+{
+    cout<<"Enter a : "<<endl;
+    cin>>a;
+    cout<<"Enter b : "<<endl;
+    cin>>b;
+
+    result = a/b;
+    
+    cout<<"The DIVISION of a/b is "<<result;
+}
+
+void Calc()
+{
+
+  int key;
+
+  
+  cout<<"1.ADDITION : "<<endl;
+  cout<<"2.SUBSTRACTION : "<<endl;
+  cout<<"3.MULTIPLICATION : "<<endl;
+  cout<<"4.DIVISION : "<<endl;
+  cout<<"Enter your Choice : ";
+  cin>>key;
+
+  switch (key)
+  {
+
+  case 1 :
+
+    Add();
+
+    break;
+  
+  case 2 :
+
+    Sub();
+
+    break;
+
+  case 3 :
+
+    Mul();
+
+    break;
+
+  case 4 :
+
+    Div();
+
+    break;
+  
+  default:
+    break;
+  }
+
+}
+
+ 
+int main()
+{
+  
+  Calc();
+
+  return 0;
+}
